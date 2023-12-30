@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+}
+.chuyendong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    animation: heartAnimation 1.8s infinite;
+  }
+  @keyframes heartAnimation {
+    0% {
+        transform: scale(1);
+        background-color:rgb(0, 0, 0) ;
+    }
+    50% {
+        transform: scale(1.15);
+        background-color:rgb(18, 18, 18) ;
+    }
+    100% {
+        transform: scale(1);
+        background-color:rgb(0, 0, 0) ;
+    }
+  }
+
+.heart {
+    width: 360px;
+    height: 360px;
+    position:relative;
+    background-color: rgb(243, 18, 72);
+    transform: rotate(-45deg);
+    margin: 200px;
+    border-radius:2px;
+    position: absolute;
+    top: 40px;
+    filter: blur(15px);
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    width: 360px;
+    height: 360px;
+    background-color: rgb(243, 18, 72);
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .heart::before {
+    top: -180px;
+    left: 0;
+  }
+  
+  .heart::after {
+    top: 0;
+    left: 180px;
+  }
+
+.inheart {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 45);
+    transform: rotate(-45deg);
+    margin: 200px;
+    border-radius:2px;
+    position: absolute;
+    top: 110px;
+    filter: blur(30px);
+  }
+  
+  .inheart::before,
+  .inheart::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 45);
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .inheart::before {
+    top: -100px;
+    left: 0;
+  }
+  
+  .inheart::after {
+    top: 0;
+    left: 100px;
+  }
+
