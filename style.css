@@ -26,8 +26,8 @@ body{
   }
 
 .heart {
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     position:relative;
     background-color: rgb(243, 18, 72);
     transform: rotate(-45deg);
@@ -41,52 +41,52 @@ body{
   .heart::before,
   .heart::after {
     content: "";
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     background-color: rgb(243, 18, 72);
     border-radius: 50%;
     position: absolute;
   }
   
   .heart::before {
-    top: -180px;
+    top: -160px;
     left: 0;
   }
   
   .heart::after {
     top: 0;
-    left: 180px;
+    left: 160px;
   }
 
 .inheart {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-color: rgb(255, 0, 45);
     transform: rotate(-45deg);
     margin: 200px;
     border-radius:2px;
     position: absolute;
-    top: 110px;
+    top: 90px;
     filter: blur(30px);
   }
   
   .inheart::before,
   .inheart::after {
     content: "";
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-color: rgb(255, 0, 45);
     border-radius: 50%;
     position: absolute;
   }
   
   .inheart::before {
-    top: -100px;
+    top: -80px;
     left: 0;
   }
   
   .inheart::after {
     top: 0;
-    left: 100px;
+    left: 80px;
   }
 
